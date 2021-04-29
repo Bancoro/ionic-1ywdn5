@@ -7,7 +7,32 @@
 </ion-header>
 
 <ion-content padding>
+    
+  <ion-item>
+    Sex:
+    <ion-select interface="popover" [(ngModel)]="sex">
+      <ion-option value="m"> Male </ion-option>
+      <ion-option value="f"> Female </ion-option>
+
+  <h2>Height in feet: <code>{{heightfeet}}</code></h2>
+
+  <ion-item>
+    <ion-range min="4" max="8" step="1" snaps="true" [(ngModel)]="heightfeet" color="dark" pin="true"></ion-range>
+  </ion-item>
+
+  <h2>Height in inches: <code>{{heightinch}}</code></h2>
+
+    <ion-item>
+      <ion-range min="0" max="11" step="1" snaps="true" ticks="true" [(ngModel)]="heightinch" color="dark" pin="true"></ion-range>
+    </ion-item>
 
 
+  <button ion-button color="secondary" (click) = "calculateIdeal()">
+    Calculate
+  </button>
+
+  <ion-item *ngIf = "sex">
+  
+  Robinson {{mrobinson}}
 
 </ion-content>
