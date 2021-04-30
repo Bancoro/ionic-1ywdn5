@@ -19,19 +19,19 @@ ion-range{
 }
 
 ion-item{
-  background-color:#304e2c;
-  border-color: #304e2c;
+  background-color:#77ae6f;
+  border-color: #77ae6f;
   border-radius: 15px;
 }
 
 ion-range{
-  background-color: #304e2c;
+  background-color: #77ae6f;
   display: block;
   margin-left: 50px;
 }
 
 ion-badge{
-  background-color: #304e2c;
+  background-color: #77ae6f;
   box-align: right;
 }
 
